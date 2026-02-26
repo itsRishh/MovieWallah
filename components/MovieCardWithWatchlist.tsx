@@ -66,7 +66,7 @@ export function MovieCardWithWatchlist({ movie, index = 0 }: MovieCardWithWatchl
       await addToWatched({
         movieId: movie.id,
         title: movie.title,
-        poster_path: movie.poster_path,
+        poster_path: movie.poster_path ?? undefined,
         vote_average: movie.vote_average,
         release_date: movie.release_date,
       });
