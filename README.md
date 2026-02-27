@@ -1,40 +1,55 @@
-# Welcome to your Convex + Next.js app
+# 🎬 MovieWallah
 
-This is a [Convex](https://convex.dev/) project created with [`npm create convex`](https://www.npmjs.com/package/create-convex).
+MovieWallah is a modern movie discovery and tracking web application that allows users to explore movies, maintain a watchlist, and receive intelligent movie recommendations based on their preferences.
 
-After the initial setup (<2 minutes) you'll have a working full-stack app using:
+The project focuses on clean UI, smooth user experience, and smart recommendation logic powered by AI.
 
-- Convex as your backend (database, server logic)
-- [React](https://react.dev/) as your frontend (web page interactivity)
-- [Next.js](https://nextjs.org/) for optimized web hosting and page routing
-- [Tailwind](https://tailwindcss.com/) for building great looking accessible UI
+---
 
-## Get started
+## 🚀 Features
 
-If you just cloned this codebase and didn't use `npm create convex`, run:
+- Browse and explore movies with rich metadata  
+- Add movies to a personal watchlist  
+- AI-powered movie recommendations based on user interests  
+- Responsive and modern UI  
+- Clean and scalable project structure  
 
-```
-npm install
-npm run dev
-```
+---
 
-If you're reading this README on GitHub and want to use this template, run:
+## 🧠 Recommendation Logic (Core Highlight)
 
-```
-npm create convex@latest -- -t nextjs
-```
+Movie recommendations are generated using an AI-driven approach:
 
-## Learn more
+- The system analyzes the **last 5 movies** added to the user’s watchlist  
+- Considers multiple factors:
+  - Genre similarity  
+  - Cast and crew overlap  
+  - Ratings and popularity  
+  - Thematic relevance  
+- Uses **OpenAI system prompting** to generate intelligent and context-aware recommendations  
 
-To learn more about developing your project with Convex, check out:
+This ensures recommendations feel **personalized**, not random.
 
-- The [Tour of Convex](https://docs.convex.dev/get-started) for a thorough introduction to Convex principles.
-- The rest of [Convex docs](https://docs.convex.dev/) to learn about all Convex features.
-- [Stack](https://stack.convex.dev/) for in-depth articles on advanced topics.
+---
 
-## Join the community
+## 🛠️ Tech Stack
 
-Join thousands of developers building full-stack apps with Convex:
+### Frontend
+- React / Next.js  
+- TypeScript  
+- Tailwind CSS  
 
-- Join the [Convex Discord community](https://convex.dev/community) to get help in real-time.
-- Follow [Convex on GitHub](https://github.com/get-convex/), star and contribute to the open-source implementation of Convex.
+### Backend
+- Node.js  
+- Convex (for backend logic & data handling)
+- auth - Better Auth
+
+### APIs & Services
+- TMDB API (for movie data)  
+- OpenAI API (for recommendation engine)  
+
+### Deployment
+- Vercel (Frontend)  
+
+---
+
